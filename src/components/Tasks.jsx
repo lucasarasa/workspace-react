@@ -29,18 +29,12 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
               {task.title}
               {/* {task.isCompleted ? "COMPLETE" : "INCOMPLETE"} */}
             </button>
-            <Button
-              onClick={() => onSeeDetailsClick(task)}
-              className="bg-slate-400 p-2 rounded-md text-white"
-            >
+            <Button onClick={() => onSeeDetailsClick(task)}>
               <ChevronRightIcon />
             </Button>
-            <button
-              onClick={() => onDeleteTaskClick(task.id)}
-              className="bg-slate-400 p-2 rounded-md text-white"
-            >
+            <Button onClick={() => onDeleteTaskClick(task.id)}>
               <TrashIcon />
-            </button>
+            </Button>
           </li>
         )
       )}
